@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <script src="weather.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="col-3">
+                <div class="col-6">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <span class="navbar-brand mb-0 h1">Weather Report</span>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="col-5">
+
+            </div>
+
+            <div class="col-4">
+                <input type="text" id="cityname">
+                <button onclick="getWeather()">Submit</button>
+            </div>
+
+
+        </div>
+
+        <div class="row " style="justify-content: center; height: 20vh;background-color;">
+            <div class="col-6 bg-light ">
+                <div class="row border " style="height: 4vh;">
+                    <div class="col-3  d-flex justify-content-center align-items-end">
+                        <h6> Current Weather</h6>
+                    </div>
+                    <div class="col-6 "></div>
+
+                    <div class="col-3  d-flex justify-content-center" id="time">
+                        <h5> 1:03:4</h5>
+                    </div>
+                </div>
+
+
+                <div class="row bg-light justify-content-center" style="height:16vh;">
+                    <div class="col-6 bg-light">
+                        <div class="row bg-light" style="height: 10vh;">
+                            <div class="col-6 bg-light d-flex justify-content-center align-items-center" id="icon">
+                                <h3>Pune</h3>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center align-items-center" id="temp">
+                                <h1>23.07</h1>
+                            </div>
+
+                        </div>
+                        <div class="row bg-light justify-content-center" style="height: 4vh;" id="desc">
+                            <h3>OVERCAST CLOUDS</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class=" row justify-content-center" style="height: 80vh;">
+            <div class=" col-6  bg-light" id="wdata">
+                <p class="row justify-content-between mx-3 py-3 border-bottom ">
+                    Feels_Like
+                    <span class="value">29°</span>
+                </p>
+
+                <p class="row justify-content-between mx-3 py-3 border-bottom">
+                    Minimun Temp<span>3 Moderate</span>
+                </p>
+
+                <p class="row justify-content-between mx-3 py-3 border-bottom">
+                    Maximum Temp<span>W 11 km/h</span>
+                </p>
+
+                <p class="row justify-content-between mx-3 py-3 border-bottom">
+                    Pressure<span>15 km/h</span>
+                </p>
+
+                <p class="row justify-content-between mx-3 py-3 border-bottom">
+                    Humidity<span>70%</span>
+                </p>
+                <p class="row justify-content-between mx-3 py-3 border-bottom">
+                    Wind Speed<span>70% (Very Humid)</span>
+                </p>
+
+                <p class="row justify-content-between mx-3 py-3 border-bottom">
+                    Rain Status<span>22° C</span>
+                </p>
+
+
+                <p class="row justify-content-between mx-3 py-3 border-bottom">
+                    Cloud Cover<span>88%</span>
+                </p>
+
+                <p class="row justify-content-between mx-3 py-3 border-bottom">
+                    Visibility<span>8 km</span>
+                </p>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
